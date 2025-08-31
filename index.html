@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="result">
+            <div id="element"></div>
+        </div>
+
+        <div class="sliders">
+            <div class="slider-wrapper">
+                <label for="h-shadow">Horizontal Shadow:</label> 
+                <input type="range" id="h-shadow" max="100" min="-100" value="0">
+            </div>
+
+            <div class="slider-wrapper">
+                <label for="v-shadow">Vertical Shadow:</label> 
+                <input type="range" id="v-shadow" max="100" min="-100" value="0">
+            </div>
+
+            <div class="slider-wrapper">
+                <label for="blur-radius">Blur Radius:</label> 
+                <input type="range" id="blur-radius" max="100" min="0" value="0">
+            </div>
+
+            <div class="slider-wrapper">
+                <label for="spread-radius">Spread Radius:</label> 
+                <input type="range" id="spread-radius" max="50" min="-50" value="0">
+            </div>
+
+            <div class="slider-wrapper">
+                <label for="shadow-color">Shadow Color:</label> 
+                <input type="color" id="shadow-color">
+            </div>
+
+            <div class="slider-wrapper">
+                <label for="shadow-color-opacity">Shadow Color Opacity:</label> 
+                <input type="range" id="shadow-color-opacity" max="1" min="0" value="1" step = "0.1">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="shadow-inset">Inset Shadow:</label>
+                <input type="checkbox" id="shadow-inset">
+            </div>
+
+            <div class="code-wrapper">
+                <textarea  id="code" rows="2" ></textarea>
+                <button onclick="copyCode()">Copy</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

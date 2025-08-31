@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e2e8f0;
+}
+
+.container {
+    background: #1e293b;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    margin: 80px auto;
+    max-width: 650px;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.result {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#element {
+    height: 120px;
+    width: 120px;
+    background: #f8fafc;
+    border-radius: 5px;
+    /* transition: box-shadow 0.25s ease-in-out; */
+    transition: none;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 6px;
+    background: transparent;
+    accent-color: #38bdf8;
+    cursor: pointer;
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #0f172a;
+    color: #38bdf8;
+    font-size: 14px;
+}
+
+.code-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.code-wrapper button {
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    color: #0f172a;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.code-wrapper button:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+@media (max-width: 740px) {
+    .container {
+        margin: 40px 20px;
+    }
+}
+
+textarea::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: rgba(56, 221, 248, 0.4);
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: rgba(56, 221, 248, 0.7); 
+}
+
+textarea::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
